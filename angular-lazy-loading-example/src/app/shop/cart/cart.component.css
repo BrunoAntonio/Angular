@@ -1,0 +1,16 @@
+.list{
+    display: inline-block;
+}
+
+.left{
+    float: left;
+}
+
+
+.center{
+    float: left;
+}
+
+.right{
+    float: left;
+}

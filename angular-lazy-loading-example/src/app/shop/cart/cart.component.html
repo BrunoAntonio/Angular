@@ -1,0 +1,14 @@
+<p>cart works!</p>
+<ul>
+  <li><a routerLink="checkout">Checkout</a></li>
+  <li><a routerLink="confirm">Confirm</a></li>
+</ul>
+
+<hr>
+<ul class="list" *ngFor="let item of data; let i = index">
+  <li> <button (click)="show(item, i)">{{i}} - {{ item }}</button></li>
+</ul>
+<hr>
+<div>
+<button class="left" (click)="backward()">backward</button><h2 class="center">{{index}} - {{item}}</h2><button class="right" (click)="forward()">forward</button>
+</div>
