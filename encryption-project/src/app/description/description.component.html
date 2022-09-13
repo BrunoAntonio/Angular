@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Data Encryption</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link href="description.component.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="header-block">
+        <h1>Data Encryption</h1>
+      </div>
+      <div id="menu-block">
+        <nav>
+          <ul>
+            <li>
+              <a routerLink="/encryption-reactive">Encryption-Reactive</a>
+            </li>
+            <li>
+              <a routerLink="/encryption-template-driven"
+                >Encryption-Template</a
+              >
+            </li>
+            <li><a routerLink="/decryption">Decryption</a></li>
+            <li><a routerLink="/observable">Observable</a></li>
+            <li><a routerLink="/http">Http</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <br />
+
+    <h2>Encryption Algorithm</h2>
+    <p>
+      An encryption algorithm is the method used to transform data into
+      <b> ciphertext </b>(encrypted text).
+    </p>
+    <p>
+      An algorithm will use the encryption key in order to alter the data in a
+      predictable way, so that even though the encrypted data will appear
+      random, it can be turned back into <b>plaintext</b> by using the
+      decryption key.
+    </p>
+
+    <h3>Best Encryption Algorithms</h3>
+    <ul>
+      <li>
+        <b>AES</b>
+        <br />
+        <p>
+          The Advanced Encryption Standard (AES) is widely considered
+          invulnerable to all attacks except for brute force.
+        </p>
+      </li>
+      <li>
+        <b>Triple DES</b>
+        <br />
+        <p>
+          Triple Data Encryption Standard applies the DES algorithm three times
+          to every data block.
+        </p>
+      </li>
+      <li>
+        <b>RSA</b>
+        <br />
+        <p>
+          RSA is a public-key encryption asymmetric algorithm and the standard
+          for encrypting information transmitted via the internet.
+        </p>
+      </li>
+    </ul>
+
+    <table class="table-right">
+      <caption>
+        <b> Algorithms Comparison </b>
+      </caption>
+      <tr>
+        <th>Factors</th>
+        <th>AES</th>
+        <th>3DES</th>
+        <th>RSA</th>
+      </tr>
+      <tr>
+        <td>Cipher Type</td>
+        <td>Symmetric Block Cipher</td>
+        <td>Symmetric Block Cipher</td>
+        <td>Asymmetric Block Cipher</td>
+      </tr>
+      <tr>
+        <td>Speed</td>
+        <td>Fast</td>
+        <td>Very Slow</td>
+        <td>Slowest</td>
+      </tr>
+      <tr>
+        <td>Security</td>
+        <td>Excellent Security</td>
+        <td>Adquate Security</td>
+        <td>Least Secure</td>
+      </tr>
+    </table>
+
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://criticalsoftware.com/" target="_blank"
+              >Critical Software</a
+            >
+          </li>
+          <li>
+            <a href="https://criticalsoftware.com/en/contacts" target="_blank"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

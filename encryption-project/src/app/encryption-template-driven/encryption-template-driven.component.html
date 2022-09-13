@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Data Encryption</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="encryption-template-driven.component.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div id = "header-block">
+            <h1>Encryption - Template Driven Forms</h1>
+        </div>
+        <div id = "menu-block">
+            <nav>
+                <ul>
+                    <li><a routerLink="">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br/>
+
+<h2>Data Encryption</h2>
+
+<form form="ngForm" (ngSubmit)="onSubmit()">
+    <fieldset>
+        <legend>String to Encrypt</legend>
+            <input type="text" id="message" placeholder="Encrypted Message" name="originalMessage" [(ngModel)]="originalMessage">
+            <br>
+            <br>
+            <input type="text" id="message1" placeholder="Encrypted Message" name="originalMessage1" [ngModel]="originalMessage1">
+            <br>
+            <br>
+            <input type="text" id="message2" placeholder="Encrypted Message" name="originalMessage2" (input)="originalMessage2 = 'From View To Component'">
+    </fieldset>
+        <button type="submit" class="send">Send</button>
+</form>
+
+<br>
+<br>
+<div>
+<p>Two Way Data Binding - <b>Original Message: {{ originalMessage }}</b></p>
+<p>One Way Data Binding - <b>Original Message: {{ originalMessage1 }}</b></p>
+<p>One Way Data Binding - <b>Original Message: {{ originalMessage2 }}</b></p>
+</div>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="https://criticalsoftware.com/" target="_blank">Critical Software</a></li>
+            <li><a href="https://criticalsoftware.com/en/contacts" target="_blank">Contacts</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    width:960px;
+    border-style: solid;
+    padding: 0px;
+    }
+
+/**************** Header ******************/
+
+
+/****************** body **********************/
+header {
+    font-weight:bold;
+    margin-bottom:30px;
+    }
+
+td, th {
+    border:1px solid black;
+    width:10%;
+    text-align:center;
+    padding:5px;
+    }
+
+
+/****************** Footer **********************/

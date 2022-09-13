@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    width:960px;
+    }
+
+/**************** Header ******************/
+#header-block {
+    border-style:dashed;
+    margin-top:10px;
+}
+
+header h1 {
+    color:black;
+    text-align: center;
+    border: 3px;
+    }
+
+/**************** Menu *********************/
+a {
+    text-decoration:none;
+    font-weight:bold;
+    }
+
+nav ul {
+    list-style-type:none;
+    padding:0;
+    }
+        
+nav li {
+    display:inline;
+    float:left;
+    }
+        
+nav a:link, nav a:visited {
+    background-color:black;
+    color:white;
+    display:block;
+    width:160px;
+    text-align:center;
+    padding: 10px 0;
+    }
+        
+nav a:hover {
+    background-color:grey;
+}
+
+/****************** body **********************/
+header {
+    font-weight:bold;
+    margin-bottom:30px;
+    }
+
+form fieldset {
+    border-color: black;
+    border-style:solid;
+}
+
+/****************** Footer **********************/
+footer {
+    position: fixed;
+    bottom: 0;
+    
+    }
+
+footer nav a:link, footer nav a:visited {
+    background-color:black;
+    color:white;
+    display:block;
+    width:160px;
+    text-align:center;
+    padding: 10px 0;
+    border-left: 150px;
+    }
+        
+footer nav a:hover {
+    background-color:grey;
+    }
+
